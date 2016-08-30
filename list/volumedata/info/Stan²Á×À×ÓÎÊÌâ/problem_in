@@ -1,0 +1,8 @@
+ <div style="width:100%;height:100%;background-color:#D9F1E7;border-radius:5px;">
+  输入的第一行为一个整数t，这个整数t代表测试数量,接下来输入t行，每行一个整数n。
+ </div>
+ <div style="width:100%;height:100%;background-color:#31BC86;border-radius:5px;">
+3
+1
+2
+3</div>

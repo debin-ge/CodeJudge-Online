@@ -1,0 +1,106 @@
+	
+		*:focus{
+			outline:none; /* Prevents blue border in Webkit */
+		}
+
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*  */
+			background: url('http://isaves.qiniudn.com/bg/iccp/bg2.png');
+			color:white;
+		}
+		
+		#top_bit {
+			width:760px;
+			margin: 0 auto;
+		}
+		
+		form {
+			width:300px;
+			margin: 20px auto;
+		}
+
+		p {
+			line-height: 1.6;
+		}
+
+		input, textarea {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-color:#fff;
+			border:1px solid #ccc;
+			font-size:20px;
+			width:300px;
+			min-height:30px;
+			display:block;
+			margin-bottom:16px;
+			margin-top:8px;
+			
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			color:white;
+		}
+		
+		textarea {
+				min-height:200px;
+		}
+
+		input:focus, textarea:focus {
+			-webkit-box-shadow:0 0 25px #ccc;
+			-moz-box-shadow:0 0 25px #ccc;
+			box-shadow:0 0 25px #ccc;
+			
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05);
+		}
+		
+		/* The interesting bit */
+		
+		input:not(:focus), textarea:not(:focus) {
+			opacity:0.5;
+		}
+		
+		input:required, textarea:required {
+			background:url("http://isaves.qiniudn.com/judge/img/images/asterisk_orange.png") no-repeat 280px 7px;						
+		}
+
+		input:valid, textarea:valid {
+			background:url("http://isaves.qiniudn.com/judge/img/images/tick.png") no-repeat 280px 5px;			
+		}		
+
+		input:focus:invalid, textarea:focus:invalid {
+			background:url("http://isaves.qiniudn.com/judge/img/images/cancel.png") no-repeat 280px 7px;						
+		}
+
+		input[type=submit] {
+			padding:10px;
+			background:none;
+			opacity:1.0;
+		}
+		body .box {
+		  display: none;
+		}
+		body .render {
+		  width: 80%;
+		  display: block;
+		  margin: 50px auto;
+		}
+		body .render span {
+		  font-size: 70px;
+		  font-weight: 300;
+		}	
+		
+		.error{
+		    color:#DB4B00;
+		    font-size:20px;
+		    border-width:1px;
+		    border-style:dotted;
+		    border-color:#080C15;
+		    border-radius:3px;
+		    background-color:#1E2528;
+		    
+		}

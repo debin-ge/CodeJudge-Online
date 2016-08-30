@@ -1,0 +1,7 @@
+这个系统的使用 你需要保证以下几点
+
+1.必须采用LAMP结构
+
+2.服务器PHP需要支持CURL
+
+3.需要修改judge/function/function.php 中CURL网络地址
